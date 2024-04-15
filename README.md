@@ -4,5 +4,5 @@
 <h2>Jefe de Integración:Miguel Ángel</h2>
 <h2>Jefe de Planificación:Alvaro</h2>
 <h2>Jefe de Desarollo:Juan Jose</h2>
-<h2>Jefe de Diseño:Pablo</h2>
-<h2>Jefe de Proyecto:Jose Maria</h2>
+<h2>Jefe de Diseño:Jose Sierra</h2>
+<h2>Jefe de Proyecto:Pablo</h2>
