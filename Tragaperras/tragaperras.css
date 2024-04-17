@@ -1,0 +1,19 @@
+/* styles.css */
+#game {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px;
+}
+
+#spin {
+    padding: 10px 20px;
+    font-size: 16px;
+}
