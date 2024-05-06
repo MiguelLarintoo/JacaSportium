@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(34, 33, 33);
+}
+
+.cuerpo {
+    background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    position: relative;
+    top: -8px;
+
+    color: #fff;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+}
+
+.listaheader {
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 2px 4px #1BC300;
+    
+}
+
+.listaheader button {
+    position: absolute; /* Cambiamos a posición absoluta */
+    top: 0;
+    right: 20px; /* Ajustamos la distancia del borde derecho */
+    background-color: #007bff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.hrheader {
+    border-color: #1BC300;
+}
+
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: 400px;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 415px;
+}
+
+.left-footer,
+.right-footer {
+    display: inline-block;
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+    width: 40%; /* Ajusta el ancho según sea necesario */
+}
+
+.footer-link {
+    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para los juegos */
+.juego {
+    border: solid 3px #fed136;
+    width: calc(100% / 3); /* Divide en 3 columnas */
+    width: 30%; /* Ajustar el ancho según sea necesario */
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.juegos-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.juego img {
+    width: 546px; /* Establecemos un ancho fijo para las imágenes */
+    height: 337px; /* Establecemos una altura fija para las imágenes */
+    transition: transform 0.3s ease; /* Agregamos una transición suave */
+    max-width: 100%; /* Aseguramos que las imágenes no se estiren más allá de su tamaño original */
+    max-height: 100%; /* Aseguramos que las imágenes no se estiren más allá de su tamaño original */
+}
+
+.juego img:hover {
+    transform: scale(1.3); /* Escalamos la imagen al 110% de su tamaño original */
+}
+
+.juego h3, .juego p {
+    color: white;
+}
