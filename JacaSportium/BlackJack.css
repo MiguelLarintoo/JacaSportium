@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(34, 33, 33);
+}
+
+.cuerpo{
+    background: linear-gradient(0deg, rgb(34, 33, 33),90%, #1BC300);
+    width: all;
+    height: 150px;
+    position: relative;
+    top: -10px;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 2px 4px #1BC300;
+    font-size: 30px;
+}
+
+.rectanguloCrupier {
+    position: absolute; /* Rectángulo posicionado absolutamente */
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
+    width: 160px; /* Ancho del rectángulo */
+    height: 230px; /* Altura del rectángulo */
+    background-color: #ccc; /* Color de fondo del rectángulo */
+    border: 2px solid #000; /* Borde del rectángulo */
+}
+
+.rectanguloCrupierText {
+    position: absolute; /* Posicionado absolutamente */
+    top: 30%; /* Centra verticalmente */
+    left: 26%; /* Centra horizontalmente */
+    color: white;
+
+}
+
+.rectanguloJugadorText {
+    position: absolute; /* Posicionado absolutamente */
+    top: 55%; /* Centra verticalmente */
+    left: 7%; /* Centra horizontalmente */
+    color: white;
+}
+
+.rectangulo1 {
+    position: absolute; /* Rectángulo posicionado absolutamente */
+    top: 80%; /* Centra verticalmente */
+    left: 20%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
+    width: 160px; /* Ancho del rectángulo */
+    height: 230px; /* Altura del rectángulo */
+    background-color: #ccc; /* Color de fondo del rectángulo */
+    border: 2px solid #000; /* Borde del rectángulo */
+}
+
+.rectangulo2 {
+    position: absolute; /* Rectángulo posicionado absolutamente */
+    top: 80%; /* Centra verticalmente */
+    left: 40%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
+    width: 160px; /* Ancho del rectángulo */
+    height: 230px; /* Altura del rectángulo */
+    background-color: #ccc; /* Color de fondo del rectángulo */
+    border: 2px solid #000; /* Borde del rectángulo */
+}
+
+.rectangulo3 {
+    position: absolute; /* Rectángulo posicionado absolutamente */
+    top: 80%; /* Centra verticalmente */
+    left: 60%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
+    width: 160px; /* Ancho del rectángulo */
+    height: 230px; /* Altura del rectángulo */
+    background-color: #ccc; /* Color de fondo del rectángulo */
+    border: 2px solid #000; /* Borde del rectángulo */
+}
+
+.rectangulo4 {
+    position: absolute; /* Rectángulo posicionado absolutamente */
+    top: 80%; /* Centra verticalmente */
+    left: 80%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
+    width: 160px; /* Ancho del rectángulo */
+    height: 230px; /* Altura del rectángulo */
+    background-color: #ccc; /* Color de fondo del rectángulo */
+    border: 2px solid #000; /* Borde del rectángulo */
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+
+}
+.listaheader{
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 2px 4px #1BC300;
+}
+.hrheader{
+    border-color: #1BC300;
+}
+
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: 400px;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 415px;
+}
+
+.left-footer,
+.right-footer {
+    display: inline-block;
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+    width: 40%; /* Ajusta el ancho según sea necesario */
+}
+
+.footer-link {
+    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
