@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="../css/eleccionJuego.css">
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var respuesta = confirm("¿Tienes más de 18 años?");
+            if (respuesta == true) {
+                // Permitir acceso a la página
+                alert("Bienvenido a nuestra página.");
+            } else {
+                // Redirigir a buscar gatos en Google
+                window.location.href = "https://www.google.com/search?q=gatos";
+            }
+        });
+    </script>
     <div class="header">
         <header>
             <nav>
@@ -79,6 +91,7 @@
     <div class="footer">
         <nav>
             <div class="footer-nav-images">
+                <img src="https://content001.bet365.es/SportsContent/Global/Footer/SPORTSX2-GA-ISO.png" class="" title="" alt="">
                 <img src="../img/legal1.png" alt="Descripción de la imagen 1">
                 <img src="../img/legal2.1.png" alt="Descripción de la imagen 1">
                 <img src="../img/legal3.png" alt="Descripción de la imagen 1">
@@ -107,6 +120,5 @@
         </nav>
     </div>
     
-
 </body>
 </html>
