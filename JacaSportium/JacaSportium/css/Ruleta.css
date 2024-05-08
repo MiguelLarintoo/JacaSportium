@@ -23,15 +23,16 @@ body{
     text-decoration: none; /*Quita el subrallado*/
     text-align: center; /*La letra la centra en el cuadro del botón*/
 }
+.CerrarSesion{
+    background-color: #1BC300; /* Verde */
+    position: relative;
+    right: -180px;
+    top: -10px;
+    margin-right: 15px; /* Margen derecho de 20px */
+}
 .ImagenRuleta{
     height: 800px;
     width: 1890px;
-}
-.header{
-    text-align: center;
-    background-color: rgb(34, 33, 33);
-    width: 100%;
-
 }
 .Advertencia{
     float: left ;
@@ -39,39 +40,98 @@ body{
 .Sobre_Nosotros{
     float: right;
 }
-.listaheader{
+.header {
+    min-height: 100px; /* Altura mínima del header */
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+}
+
+
+.listaheader {
     list-style: none;
     display: inline;
     margin: 1%;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 0px 2px 4px #1BC300;
+    position: relative;
+    left: 10px;
+    top: 10px;
 }
-.hrheader{
+
+
+.logo-container {
+    float: left; /* Alinea el contenedor del logo a la izquierda */
+    width: 110px; /* Establece el ancho en 50px */
+    height: 110px; /* Establece la altura en 50px */
+    margin-top: -20px; /* Mueve el contenedor 4px hacia arriba */
+}
+
+.logo-image {
+    width: 100%; /* Ajusta la anchura al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+}
+
+
+.listaheader button {
+    border: 2px solid #efb810; /* Borde dorado */
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.listaheader button.registrarte {
+    background-color: #ff0000; /* Rojo */
+    float: right; /* Mover a la derecha */
+    margin-right: 15px; /* Margen derecho de 20px */
+}
+
+.listaheader button.iniciar-sesion {
+    background-color: #1BC300; /* Verde */
+    float: right; /* Mover a la derecha */
+    margin-right: 15px; /* Margen derecho de 20px */
+}
+
+
+
+.listaheader button:hover {
+    filter: brightness(80%); /* Oscurece el botón al pasar el cursor sobre él */
+}
+
+.hrheader {
     border-color: #1BC300;
 }
+/*Modifica todo hacia abajo o hacia arriba el footer*/
 .footercolor {
     background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
     width: all;
-    height: 200px;
+    height: 250px;
     position: relative;
     top: 700px;
+    clear: left;
 }
 
 .footertext {
     color: white;
 }
-
+/*Todas las imagenes y los cuadros del footer*/
 .footer {
     text-align: center;
     position: relative;
-    top: 415px;
+    top: 330px;
 }
 
 .left-footer,
 .right-footer {
-    width: 48%; /* Establecemos un ancho para cada columna */
+    width: 48%;
+    border: 4px solid #efb810;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
+
 
 .footer-content {
     display: flex;
@@ -93,13 +153,23 @@ body{
     margin: 5px; /* Ajustar el margen entre las imágenes según sea necesario */
 }
 
-.footer-nav-images img:nth-child(3) {
-    width: 140px;
-    height: 50px;
+.footer-nav-images img:nth-child(2) {
+    width: 40px;
+    height: 40px;
 }
+
 .footer-nav-images img:nth-child(4) {
+    width: 150px;
+    height: 40px;
+}
+.footer-nav-images img:nth-child(5) {
     width: 140px;
-    height: 50px;
+    height: 60px;
+}
+
+.footer-nav-images img:nth-child(6) {
+    width: 80px;
+    height: 70px;
 }
 .footer-link {
     clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
@@ -107,5 +177,5 @@ body{
 }
 
 .footer-link a {
-    color: #007bff; /* Cambia el color del texto del enlace */
+    color: white; /* Cambia el color del texto del enlace */
 }
