@@ -1,16 +1,3 @@
-body {
-    background-color: rgb(34, 33, 33);
-}
-
-.cuerpo {
-    background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300);
-    width: all;
-    position: relative;
-    top: -8px;
-    color: #fff;
-    text-align: center;
-}
-
 .header {
     min-height: 100px; /* Altura mínima del header */
     text-align: center;
@@ -151,35 +138,3 @@ body {
     color: white; /* Cambia el color del texto del enlace */
 }
 
-
-/* Estilo para los juegos */
-.juego {
-    border: solid 3px #efb810;
-    width: calc(100% / 3); /* Divide en 3 columnas */
-    width: 30%; /* Ajustar el ancho según sea necesario */
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.juegos-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.juego img {
-    width: 546px; /* Establecemos un ancho fijo para las imágenes */
-    height: 337px; /* Establecemos una altura fija para las imágenes */
-    transition: transform 0.3s ease; /* Agregamos una transición suave */
-    max-width: 100%; /* Aseguramos que las imágenes no se estiren más allá de su tamaño original */
-    max-height: 100%; /* Aseguramos que las imágenes no se estiren más allá de su tamaño original */
-}
-
-.juego img:hover {
-    transform: scale(1.3); /* Escalamos la imagen al 110% de su tamaño original */
-}
-
-.juego h3, .juego p {
-    color: white;
-}
