@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(34, 33, 33);
+}
+
+.cuerpo{
+    background: linear-gradient(0deg, rgb(34, 33, 33),90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: -8px;
+}
+.BotonApuesta{
+    position: absolute;
+    right: 900px;
+    top: 455px;
+    background-color: blue;
+   border-radius: 7px;
+    width: 140px;
+    height: 40px;
+    color: white;
+    font-weight: bold;  /*Comentar a jesus haber si se puede utilizar*/
+    font-family: "Times New Roman", Times, serif; /*Tipo de letra*/
+    text-decoration: none; /*Quita el subrallado*/
+    text-align: center; /*La letra la centra en el cuadro del botón*/
+}
+.ImagenRuleta{
+    height: 800px;
+    width: 1890px;
+}
+.header{
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+
+}
+.Advertencia{
+    float: left ;
+}
+.Sobre_Nosotros{
+    float: right;
+}
+.listaheader{
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 2px 4px #1BC300;
+}
+.hrheader{
+    border-color: #1BC300;
+}
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: 700px;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 415px;
+}
+
+.left-footer,
+.right-footer {
+    width: 48%; /* Establecemos un ancho para cada columna */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-nav-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-nav-images img {
+    width: 60px;
+    height: 50px;
+    margin: 5px; /* Ajustar el margen entre las imágenes según sea necesario */
+}
+
+.footer-nav-images img:nth-child(3) {
+    width: 140px;
+    height: 50px;
+}
+.footer-nav-images img:nth-child(4) {
+    width: 140px;
+    height: 50px;
+}
+.footer-link {
+    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.footer-link a {
+    color: #007bff; /* Cambia el color del texto del enlace */
+}
