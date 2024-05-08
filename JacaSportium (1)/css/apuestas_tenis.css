@@ -1,0 +1,220 @@
+/* General */
+body {
+    background-color: rgb(34, 33, 33); /* Fondo oscuro */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar rellenos por defecto */
+}
+
+.header {
+    min-height: 100px; /* Altura mínima del header */
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+}
+
+
+.listaheader {
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 2px 4px #1BC300;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+
+.logo-container {
+    float: left; /* Alinea el contenedor del logo a la izquierda */
+    width: 110px; /* Establece el ancho en 50px */
+    height: 110px; /* Establece la altura en 50px */
+    margin-top: -20px; /* Mueve el contenedor 4px hacia arriba */
+}
+
+.logo-image {
+    width: 100%; /* Ajusta la anchura al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+}
+
+
+.listaheader button {
+    border: 2px solid #efb810; /* Borde dorado */
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.listaheader button.registrarte {
+    background-color: #ff0000; /* Rojo */
+    float: right; /* Mover a la derecha */
+    margin-right: 15px; /* Margen derecho de 20px */
+}
+
+.listaheader button.iniciar-sesion {
+    background-color: #1BC300; /* Verde */
+    float: right; /* Mover a la derecha */
+    margin-right: 15px; /* Margen derecho de 20px */
+}
+
+
+
+.listaheader button:hover {
+    filter: brightness(80%); /* Oscurece el botón al pasar el cursor sobre él */
+}
+
+.hrheader {
+    border-color: #1BC300;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Estilo para la sección de partidos de tenis */
+.tennis-matches {
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.tennis-match {
+    background-color: #ecf0f1; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    margin-bottom: 20px; /* Espaciado entre partidos */
+}
+
+/* Estilos para las opciones de apuestas */
+.betting-options {
+    display: flex; /* Flex para alinear horizontalmente */
+    justify-content: center; /* Centrar botones */
+    gap: 10px; /* Espaciado entre botones */
+}
+
+/* Estilos para los botones de apuestas */
+.betting-options button {
+    background-color: #3498db; /* Color azul */
+    border-radius: 10px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.betting-options button:hover {
+    background-color: #2980b9; /* Cambia el color al pasar el ratón */
+}
+
+.corner-images {
+    position: relative; /* Contenedor relativo para las imágenes */
+    width: 100%; /* Ajustar al ancho del contenedor padre */
+    height: 0; /* Altura inicial de 0 */
+    padding-top: 50px; /* Ajustar la altura para las imágenes */
+}
+
+.corner-image {
+    width: 50px; /* Tamaño de la imagen */
+    height: 50px;
+    position: absolute; /* Posición absoluta dentro del contenedor relativo */
+    background-size: cover; /* Ajustar el tamaño de la imagen */
+}
+
+.top-left {
+    background-image: url('../img/top-left-image.png'); /* Ruta de la imagen */
+    top: 0; /* Colocar en la parte superior */
+    left: 0; /* Colocar en la izquierda */
+}
+
+.top-right {
+    background-image: url('../img/top-right-image.png'); /* Ruta de la imagen */
+    top: 0; /* Colocar en la parte superior */
+    right: 0; /* Colocar en la derecha */
+}
+
+
+
+
+.footercolor {
+    background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
+    width: all;
+    height: 200px;
+    position: relative;
+    top: 0px;
+    clear: left;
+}
+
+.footertext {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.left-footer,
+.right-footer {
+    width: 48%;
+    border: 4px solid #efb810;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-nav-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-nav-images img {
+    width: 60px;
+    height: 50px;
+    margin: 5px; /* Ajustar el margen entre las imágenes según sea necesario */
+}
+
+.footer-nav-images img:nth-child(2) {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-nav-images img:nth-child(4) {
+    width: 150px;
+    height: 40px;
+}
+.footer-nav-images img:nth-child(5) {
+    width: 140px;
+    height: 60px;
+}
+
+.footer-nav-images img:nth-child(6) {
+    width: 80px;
+    height: 70px;
+}
+.footer-link {
+    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.footer-link a {
+    color: white; /* Cambia el color del texto del enlace */
+}
+
+
+
