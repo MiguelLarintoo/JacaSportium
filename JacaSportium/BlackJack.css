@@ -1,5 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&display=swap');
+
 body{
     background-color: rgb(34, 33, 33);
+}
+
+.header{
+    min-height: 100px; /* Altura mínima del header */
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+}
+
+
+.listaheader {
+    list-style: none;
+    display: inline;
+    margin: 1%;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 2px 4px #1BC300;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.listaheader button {
+    border: 2px solid #efb810; /* Borde dorado */
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.listaheader button. {
+    background-color: #ff0000; /* Rojo */
+    float: right; /* Mover a la derecha */
+    margin-right: 20px; /* Margen derecho de 20px */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1BC300;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: #000 4px solid;
+}
+
+.logo-container {
+    float: left; /* Alinea el contenedor del logo a la izquierda */
+    width: 110px; /* Establece el ancho en 50px */
+    height: 110px; /* Establece la altura en 50px */
+    margin-top: -10px; /* Mueve el contenedor 4px hacia arriba */
+}
+
+.logo-image {
+    width: 130%; /* Ajusta la anchura al 100% del contenedor */
+    height: 130%; /* Ajusta la altura al 100% del contenedor */
+}
+
+.social-logo {
+    width: 60px;
+    height: 60px;
 }
 
 .cuerpo{
@@ -7,16 +77,69 @@ body{
     width: all;
     height: 150px;
     position: relative;
-    top: -10px;
+    top: 20px;
 	text-align: center;
 	color: white;
 	text-shadow: 0px 2px 4px #1BC300;
     font-size: 30px;
 }
 
+.PedirCartaBoton {
+    position: absolute; /* Posicionado absolutamente */
+    top: 45%; /* Centra verticalmente */
+    left: 25%; /* Centra horizontalmente */
+    color: black;
+    font-size: 20px; /* Tamaño del texto */
+    padding: 5px 5px; /* Espacio dentro del botón (arriba/abajo, izquierda/derecha) */
+    background-color: #1BC300; /* Color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 2px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.RetirarseBoton {
+    position: absolute; /* Posicionado absolutamente */
+    top: 51%; /* Centra verticalmente */
+    left: 25%; /* Centra horizontalmente */
+    color: black;
+    font-size: 20px; /* Tamaño del texto */
+    padding: 5px 5px; /* Espacio dentro del botón (arriba/abajo, izquierda/derecha) */
+    background-color: #1BC300; /* Color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 2px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.HacerApuestaBoton {
+    position: absolute; /* Posicionado absolutamente */
+    top: 45%; /* Centra verticalmente */
+    left: 65%; /* Centra horizontalmente */
+    color: black;
+    font-size: 20px; /* Tamaño del texto */
+    padding: 5px 5px; /* Espacio dentro del botón (arriba/abajo, izquierda/derecha) */
+    background-color: #1BC300; /* Color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 2px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.DoblarApuestaBoton {
+    position: absolute; /* Posicionado absolutamente */
+    top: 51%; /* Centra verticalmente */
+    left: 65%; /* Centra horizontalmente */
+    color: black;
+    font-size: 20px; /* Tamaño del texto */
+    padding: 5px 5px; /* Espacio dentro del botón (arriba/abajo, izquierda/derecha) */
+    background-color: #1BC300; /* Color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 2px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    
+}
+
 .rectanguloCrupier {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 40%; /* Centra verticalmente */
+    top: 43%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
     width: 160px; /* Ancho del rectángulo */
@@ -35,14 +158,14 @@ body{
 
 .rectanguloJugadorText {
     position: absolute; /* Posicionado absolutamente */
-    top: 55%; /* Centra verticalmente */
+    top: 60%; /* Centra verticalmente */
     left: 7%; /* Centra horizontalmente */
     color: white;
 }
 
 .rectangulo1 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 80%; /* Centra verticalmente */
+    top: 90%; /* Centra verticalmente */
     left: 20%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
     width: 160px; /* Ancho del rectángulo */
@@ -50,10 +173,10 @@ body{
     background-color: #ccc; /* Color de fondo del rectángulo */
     border: 2px solid #000; /* Borde del rectángulo */
 }
-
+  
 .rectangulo2 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 80%; /* Centra verticalmente */
+    top: 90%; /* Centra verticalmente */
     left: 40%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
     width: 160px; /* Ancho del rectángulo */
@@ -64,7 +187,7 @@ body{
 
 .rectangulo3 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 80%; /* Centra verticalmente */
+    top: 90%; /* Centra verticalmente */
     left: 60%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
     width: 160px; /* Ancho del rectángulo */
@@ -75,7 +198,7 @@ body{
 
 .rectangulo4 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 80%; /* Centra verticalmente */
+    top: 90%; /* Centra verticalmente */
     left: 80%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
     width: 160px; /* Ancho del rectángulo */
@@ -84,30 +207,13 @@ body{
     border: 2px solid #000; /* Borde del rectángulo */
 }
 
-.header{
-    text-align: center;
-    background-color: rgb(34, 33, 33);
-    width: 100%;
-
-}
-.listaheader{
-    list-style: none;
-    display: inline;
-    margin: 1%;
-    color: white;
-    font-size: 20px;
-    text-shadow: 0px 2px 4px #1BC300;
-}
-.hrheader{
-    border-color: #1BC300;
-}
 
 .footercolor {
     background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
-    width: all;
-    height: 200px;
+    width: 170;
+    height: 100px;
     position: relative;
-    top: 400px;
+    top: 560px;
 }
 
 .footertext {
@@ -117,7 +223,7 @@ body{
 .footer {
     text-align: center;
     position: relative;
-    top: 415px;
+    top: 565px;
 }
 
 .left-footer,
@@ -127,8 +233,49 @@ body{
     width: 40%; /* Ajusta el ancho según sea necesario */
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-nav-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-nav-images img {
+    width: 60px;
+    height: 50px;
+    margin: 5px; /* Ajustar el margen entre las imágenes según sea necesario */
+}
+
+.footer-nav-images img:nth-child(2) {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-nav-images img:nth-child(4) {
+    width: 190px;
+    height: 40px;
+}
+.footer-nav-images img:nth-child(5) {
+    width: 150px;
+    height: 60px;
+}
+
+.footer-nav-images img:nth-child(6) {
+    width: 180px;
+    height: 70px;
+}
 .footer-link {
     clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
 
+.footer-link a {
+    color: white; /* Cambia el color del texto del enlace */
+}
