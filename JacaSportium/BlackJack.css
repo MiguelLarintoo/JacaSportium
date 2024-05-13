@@ -34,10 +34,10 @@ body{
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
 
-.listaheader button. {
-    background-color: #ff0000; /* Rojo */
+.listaheader button.Cerrar-Sesión {
+    background-color: #1BC300; /* Rojo */
     float: right; /* Mover a la derecha */
-    margin-right: 20px; /* Margen derecho de 20px */
+    margin-right: 67px; /* Margen derecho de 20px */
 }
 
 .dropdown {
@@ -86,7 +86,7 @@ body{
 
 .PedirCartaBoton {
     position: absolute; /* Posicionado absolutamente */
-    top: 45%; /* Centra verticalmente */
+    top: 60%; /* Centra verticalmente */
     left: 25%; /* Centra horizontalmente */
     color: black;
     font-size: 20px; /* Tamaño del texto */
@@ -99,7 +99,7 @@ body{
 
 .RetirarseBoton {
     position: absolute; /* Posicionado absolutamente */
-    top: 51%; /* Centra verticalmente */
+    top: 66%; /* Centra verticalmente */
     left: 25%; /* Centra horizontalmente */
     color: black;
     font-size: 20px; /* Tamaño del texto */
@@ -112,7 +112,7 @@ body{
 
 .HacerApuestaBoton {
     position: absolute; /* Posicionado absolutamente */
-    top: 45%; /* Centra verticalmente */
+    top: 60%; /* Centra verticalmente */
     left: 65%; /* Centra horizontalmente */
     color: black;
     font-size: 20px; /* Tamaño del texto */
@@ -125,7 +125,7 @@ body{
 
 .DoblarApuestaBoton {
     position: absolute; /* Posicionado absolutamente */
-    top: 51%; /* Centra verticalmente */
+    top: 66%; /* Centra verticalmente */
     left: 65%; /* Centra horizontalmente */
     color: black;
     font-size: 20px; /* Tamaño del texto */
@@ -139,18 +139,18 @@ body{
 
 .rectanguloCrupier {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 43%; /* Centra verticalmente */
+    top: 60%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
-    width: 160px; /* Ancho del rectángulo */
-    height: 230px; /* Altura del rectángulo */
+    width: 140px; /* Ancho del rectángulo */
+    height: 199px; /* Altura del rectángulo */
     background-color: #ccc; /* Color de fondo del rectángulo */
-    border: 2px solid #000; /* Borde del rectángulo */
+    border: 0px solid #000; /* Borde del rectángulo */
 }
 
 .rectanguloCrupierText {
     position: absolute; /* Posicionado absolutamente */
-    top: 30%; /* Centra verticalmente */
+    top: 40%; /* Centra verticalmente */
     left: 26%; /* Centra horizontalmente */
     color: white;
 
@@ -158,51 +158,51 @@ body{
 
 .rectanguloJugadorText {
     position: absolute; /* Posicionado absolutamente */
-    top: 60%; /* Centra verticalmente */
+    top: 70%; /* Centra verticalmente */
     left: 7%; /* Centra horizontalmente */
     color: white;
 }
 
 .rectangulo1 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 90%; /* Centra verticalmente */
+    top: 100%; /* Centra verticalmente */
     left: 20%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
-    width: 160px; /* Ancho del rectángulo */
-    height: 230px; /* Altura del rectángulo */
+    width: 140px; /* Ancho del rectángulo */
+    height: 195px; /* Altura del rectángulo */
     background-color: #ccc; /* Color de fondo del rectángulo */
     border: 2px solid #000; /* Borde del rectángulo */
 }
   
 .rectangulo2 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 90%; /* Centra verticalmente */
+    top: 100%; /* Centra verticalmente */
     left: 40%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
-    width: 160px; /* Ancho del rectángulo */
-    height: 230px; /* Altura del rectángulo */
+    width: 140px; /* Ancho del rectángulo */
+    height: 195px; /* Altura del rectángulo */
     background-color: #ccc; /* Color de fondo del rectángulo */
     border: 2px solid #000; /* Borde del rectángulo */
 }
 
 .rectangulo3 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 90%; /* Centra verticalmente */
+    top: 100%; /* Centra verticalmente */
     left: 60%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
-    width: 160px; /* Ancho del rectángulo */
-    height: 230px; /* Altura del rectángulo */
+    width: 140px; /* Ancho del rectángulo */
+    height: 199px; /* Altura del rectángulo */
     background-color: #ccc; /* Color de fondo del rectángulo */
     border: 2px solid #000; /* Borde del rectángulo */
 }
 
 .rectangulo4 {
     position: absolute; /* Rectángulo posicionado absolutamente */
-    top: 90%; /* Centra verticalmente */
+    top: 100%; /* Centra verticalmente */
     left: 80%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Corrige la mitad del tamaño del rectángulo */
-    width: 160px; /* Ancho del rectángulo */
-    height: 230px; /* Altura del rectángulo */
+    transform: translate(-55%, -50%); /* Corrige la mitad del tamaño del rectángulo */
+    width: 140px; /* Ancho del rectángulo */
+    height: 195px; /* Altura del rectángulo */
     background-color: #ccc; /* Color de fondo del rectángulo */
     border: 2px solid #000; /* Borde del rectángulo */
 }
