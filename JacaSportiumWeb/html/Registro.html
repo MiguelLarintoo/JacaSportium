@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesion</title>
+    <title>Resgistro Usuario</title>
     <link rel="stylesheet" href="../css/inicioSesion.css">
 </head>
 <body>
@@ -21,31 +21,41 @@
     <div class="cuerpo">
     </div>
     <div class="container">
-        <h2>Inicia Sesion en JacaSportium</h2>
-        <form action="../Index.html" method="get" onsubmit="validarFormulario()">
+        <h2>Registrate en JacaSportium</h2>
+        <form id="registrationForm" action="../Index.html" method="get" onsubmit="return validarFormulario()">
+
           <fieldset>
             <legend>Información Personal</legend>
             <div class="form-group">
-              <label for="nombre">Usuario:</label>
-              <input type="text" class="nombre" name="nombre" >
+              <label for="Nombre">Nombre completo:</label>
+              <input type="text" class="nombre" name="nombre" id="Nombre" >
             </div>
             <div class="form-group">
-              <label for="password">Contraseña:</label>
-              <input type="password" class="password" name="password" >
+              <label for="Mail">Correo electrónico:</label>
+              <input type="email" class="email" name="email" id="Mail" >
+            </div>
+            <div class="form-group">
+              <label for="Contra">Contraseña:</label>
+              <input type="password" class="password" name="password" id="Contra" >
+            </div>
+            <div class="form-group">
+              <label for="Dni">DNI:</label>
+              <input type="text" class="dni" name="dni" id="Dni" >
             </div>
           </fieldset>
           <div class="form-group">
-            
-            <input type="checkbox" class="terms" name="terms" ><label for="terms">Acepto los términos y condiciones de uso.</label>
+            <input type="checkbox" class="terms" name="terms" id="terms">
+            <label for="terms">Acepto los términos y condiciones de uso.</label>
           </div>
           <div class="form-group">
-            <input type="checkbox" class="subscribe" name="subscribe">
+            <input type="checkbox" class="subscribe" name="subscribe" id="subscribe">
             <label for="subscribe">Deseo recibir correos electrónicos con promociones exclusivas y noticias sobre apuestas.</label>
           </div>
-          <button type="submit">Inicia Sesion</button>
+          <button type="submit">Registrarse</button>
         </form>
+        <div id="errores"></div>
       </div>
-
+      
       <img src="../img/logo.png" alt="imagenPrueba" class="imagen">
       <script src="../js/validacionFormulario.js"></script>
 
@@ -54,7 +64,6 @@
     </div>
 
     <div class="footer">
-      <footer>
       <nav>
           <div class="footer-nav-images">
               <img src="https://content001.bet365.es/SportsContent/Global/Footer/SPORTSX2-GA-ISO.png" class="" title="" alt="">
@@ -85,6 +94,6 @@
           </div>
       </nav>
   </div>
-</footer>
+
 </body>
 </html>
