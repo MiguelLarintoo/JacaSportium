@@ -60,7 +60,7 @@ body {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
-    margin-top: 10px; /* Mover botones más abajo */
+    margin-top: 15px; /* Mover botones más abajo */
     font-size: 15px; /* Aumentar tamaño de texto en 2px */
     padding: 5px 15px; /* Aumentar tamaño del botón en 2px */
 }
@@ -87,12 +87,19 @@ body {
     border-color: #1BC300;
 }
 
+
+.contenidoERP{
+    color: white;
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+}
 .footercolor {
     background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
     width: all;
     height: 200px;
     position: relative;
-    top: 0px;
+    top: 100px;
     clear: left;
 }
 
@@ -103,7 +110,7 @@ body {
 .footer {
     text-align: center;
     position: relative;
-    top: 15px;
+    top: 150px;
 }
 
 .left-footer,

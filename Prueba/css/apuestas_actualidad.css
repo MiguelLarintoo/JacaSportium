@@ -87,23 +87,42 @@ body {
     border-color: #1BC300;
 }
 
-.partido_futbol{
-    color: black;
-    text-shadow: 0px 2px 4px #1BC300;
-}
-
-.main-content {
+.container_1{
     padding: 20px; 
     text-align: center; 
     background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.football-matches {
+.container_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
     text-align: center; 
-    margin-top: 20px; 
 }
 
-.football-match {
+.half-width-left,
+.half-width-right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.half-width-left {
+    background-color: black; 
+    color: #ecf0f1; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+    position: relative; 
+    margin-right: 10px;
+}
+
+.half-width-right {
     background-color: black; 
     color: #ecf0f1; 
     padding: 30px; 
@@ -113,52 +132,37 @@ body {
     position: relative; 
 }
 
-.image-left {
-    position: absolute;
-    top: 10px; /* Ajusta según sea necesario */
-    left: -30px; /* Ajusta según sea necesario */
-    width: 350px; /* Tamaño de la imagen */
-    height: 230px; /* Tamaño de la imagen */
+.image-container {
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
 }
 
-.image-right {
-    position: absolute;
-    top: 15px; /* Ajusta según sea necesario */
-    right: 80px; /* Ajusta según sea necesario */
-    width: 175px; /* Tamaño de la imagen */
-    height: 230px; /* Tamaño de la imagen */
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
 }
 
-.image-left_2{
-    position: absolute;
-    top: 20px; /* Ajusta según sea necesario */
-    left: 30px; /* Ajusta según sea necesario */
-    width: 225px; /* Tamaño de la imagen */
-    height: 215px; /* Tamaño de la imagen */
+/* Estilos para la imagen */
+.left-image {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    width: 200px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
 }
 
-.image-right_2{
-    position: absolute;
-    top: 15px; /* Ajusta según sea necesario */
-    right: 80px; /* Ajusta según sea necesario */
-    width: 175px; /* Tamaño de la imagen */
-    height: 225px; /* Tamaño de la imagen */
+/* Estilos para los botones de apuesta */
+.betting-options button {
+    padding: 12px 20px; /* Aumentar el tamaño del botón */
+    background: #1BC300; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    color: white; /* Texto en blanco */
+    cursor: pointer; /* Cambiar a mano al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
 }
 
-.image-left_3{
-    position: absolute;
-    top: 20px; /* Ajusta según sea necesario */
-    left: 30px; /* Ajusta según sea necesario */
-    width: 225px; /* Tamaño de la imagen */
-    height: 215px; /* Tamaño de la imagen */
-}
-
-.image-right_3{
-    position: absolute;
-    top: 15px; /* Ajusta según sea necesario */
-    right: 40px; /* Ajusta según sea necesario */
-    width: 250px; /* Tamaño de la imagen */
-    height: 225px; /* Tamaño de la imagen */
+/* Cambia el color de fondo al pasar el mouse */
+.betting-options button:hover {
+    background: #16a085; /* Color verde más oscuro */
 }
 
 .modal {
@@ -219,29 +223,6 @@ button {
 button:hover {
     background: #16a085; /* Color al pasar el mouse */
 }
-
-
-/* Estilos para los botones de apuesta */
-.betting-options {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px; /* Espacio entre botones */
-}
-
-.betting-options button {
-    background-color: #1BC300; 
-    border-radius: 10px; 
-    border: none; 
-    color: white; 
-    padding: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
-
-.betting-options button:hover {
-    background-color: #16a085; /* Cambia el color al pasar el mouse */
-}
-
 
 .footercolor {
     background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
@@ -352,4 +333,3 @@ button:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-

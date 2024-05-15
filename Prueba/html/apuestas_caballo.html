@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Página de Apuestas de Caballos</title>
+    <link rel="icon" href="../img/favicon.png" sizes="500x500" type="image/png">
     <link rel="stylesheet" href="../css/apuestas_caballo.css" />
 </head>
 
@@ -23,14 +24,14 @@
                         <a href="#" class="dropbtn"><b>Juegos</b></a>
                         <div class="dropdown-content">
                             <a href="../html/BlackJack.html">BlackJack</a>
-                            <a href="../html/apuestas.html">Apuesta Deportiva</a>
+                            <a href="../html/eleccionJuego.html">Apuesta Deportiva</a>
                             <a href="../html/Ruleta.html">Ruleta</a>
-                            <a href="../html/apuestas.html">Apuesta Elecciones</a>
-                            <a href="../html/apuestas.html">Apuesta Galgos</a>
+                            <a href="../html/apuestas_actualidad.html">Apuesta Elecciones</a>
+                            <a href="../html/prueba_tragaperras.html">Tragaperras</a>
                         </div>
                     </li>
-                    <li class="listaheader"><a href="../html/SobreNosotros">Acerca De Nosotros</a></li>
-                    <li class="listaheader"><a href="../html/AtencionCliente">A.T</a></li>
+                    <li class="listaheader"><a href="../html/SobreNosotros.html">Acerca De Nosotros</a></li>
+                    <li class="listaheader"><a href="../html/AtencionCliente.html">A.T</a></li>
                     <li class="listaheader"><a href="../html/inicioSesion.html"><button class="iniciar-sesion">Iniciar Sesión</button></a></li>
                     <li class="listaheader"><a href="../html/registro.html"><button class="registrarte">Registrarte</button></a></li>
                 </ul>
@@ -49,8 +50,8 @@
             <!-- Carrera 1 -->
             <div class="horse-race">
                 <!-- Imágenes de los caballos -->
-                <img class="image" src="../img/horse1.png" alt="Caballo 1" />
-                <img class="image" src="../img/horse2.png" alt="Caballo 2" />
+                <img class="image-left" src="../img/caballo_1(1).png" alt="Caballo 1" />
+                <img class="image-right" src="../img/caballo_2(1).png" alt="Caballo 2" />
 
                 <h3>Carrera 1</h3>
                 <p>Fecha: 15 de junio de 2024</p>
@@ -64,12 +65,39 @@
                     <button>Caballo 4 - 3.50</button>
                     <button>Caballo 5 - 4.00</button>
                 </div>
+
+                <!-- Pop-up modal para ingresar la apuesta - Carrera 2 -->
+          <div class="modal" id="betModal1">
+            <div class="modal-content">
+              <span class="close-button" id="closeModal1">&times;</span>
+              <!-- Para cerrar el modal -->
+              <h2>Apuesta - Carrera 2</h2>
+              <label for="betAmount1">Cantidad a apostar:</label>
+              <input
+                type="number"
+                id="betAmount2"
+                min="0"
+                step="0.01"
+                placeholder="Ingrese la cantidad"
+              />
+          
+              <p id="bettingOption2"></p>
+              <!-- Muestra la opción de apuesta -->
+          
+              <button id="calculateButton1">Calcular Ganancia</button>
+              <!-- Botón para calcular -->
+              <div id="result2"></div>
+              <!-- Muestra el resultado -->
+              <!-- Botón para realizar apuestas - Carrera 2 -->
+              <button id="placeBetButton1">Realizar Apuesta</button>
+            </div>
+                </div>
             </div>
 
             <!-- Carrera 2 -->
             <div class="horse-race">
-                <img class="image" src="../img/horse6.png" alt="Caballo 6" />
-                <img class="image" src="../img/horse7.png" alt="Caballo 7" />
+                <img class="image-left_2" src="../img/caballo_carreras-removebg-preview.png" alt="Caballo 6" />
+                <img class="image-right_2" src="../img/caballo_izquierda-removebg-preview.png" alt="Caballo 7" />
                 
 
                 <h3>Carrera 2</h3>
@@ -78,14 +106,59 @@
 
                 <h4>Opciones de Apuesta:</h4>
                 <div class="betting-options">
-                    <button>Caballo 6 - 2.10</button>
-                    <button>Caballo 7 - 2.30</button>
-                    <button>Caballo 8 - 2.70</button>
-                    <button>Caballo 9 - 3.00</button>
-                    <button>Caballo 10 - 3.50</button>
+                    <button>Caballo 1 - 2.10</button>
+                    <button>Caballo 2 - 2.30</button>
+                    <button>Caballo 3 - 2.70</button>
+                    <button>Caballo 4 - 3.00</button>
+                    <button>Caballo 5 - 3.50</button>
+                </div>
+            
+
+            <!-- Pop-up modal para ingresar la apuesta - Carrera 2 -->
+            <div class="modal" id="betModal2">
+                <div class="modal-content">
+                    <span class="close-button" id="closeModal2">&times;</span>
+                    <!-- Para cerrar el modal -->
+                    <h2>Apuesta - Carrera 2</h2>
+                    <label for="betAmount2">Cantidad a apostar:</label>
+                    <input
+                        type="number"
+                        id="betAmount2"
+                        min="0"
+                        step="0.01"
+                        placeholder="Ingrese la cantidad"
+                    />
+                
+                    <p id="bettingOption2"></p>
+                    <!-- Muestra la opción de apuesta -->
+                
+                    <button id="calculateButton2">Calcular Ganancia</button>
+                    <!-- Botón para calcular -->
+                    <div id="result2"></div>
+                    <!-- Muestra el resultado -->
+                    <!-- Botón para realizar apuestas - Carrera 2 -->
+                    <button id="placeBetButton2">Realizar Apuesta</button>
+                    </div>
                 </div>
             </div>
+        
+          
         </section>
+
+        <!-- Botón para ver el resumen de apuestas de caballos -->
+      <button id="resumenGalgoButton">Ver Resumen de Apuestas de Caballos</button>
+
+      <!-- Modal para mostrar el resumen de apuestas de caballos -->
+      <div class="modal" id="resumenGalgoModal">
+      <div class="modal-content">
+          <span class="close-button" id="closeResumenGalgoModal">&times;</span>
+          <h2>Resumen de Apuestas de Caballos</h2>
+          <div id="apuestasGalgoResumen"></div>
+          <p>Total apostado en caballos: <span id="totalApostadoGalgo">0</span></p>
+      </div>
+      </div>
+      <script src="../js/apuestas_caballo.js"></script>
+    <!-- Ruta del JavaScript -->
     </main>
 
     <div class="footercolor">
@@ -118,9 +191,11 @@
             </div>
             
             <div class="footer-link">
-                <a href="erc/src" target="_blank">aquí iría enlace a erc/src si tan solo tuviera uno</a>
+                <a href="../html/ERC.html" target="_blank">aquí iría enlace a erc/src si tan solo tuviera uno</a>
             </div>
         </nav>
     </div>
+
+    
 </body>
 </html>

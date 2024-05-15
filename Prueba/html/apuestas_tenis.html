@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Página de Apuestas de Tenis</title>
+    <link rel="icon" href="../img/favicon.png" sizes="500x500" type="image/png">
     <link rel="stylesheet" href="../css/apuestas_tenis.css" />
   </head>
 
@@ -23,14 +24,14 @@
                       <a href="#" class="dropbtn"><b>Juegos</b></a>
                       <div class="dropdown-content">
                           <a href="../html/BlackJack.html">BlackJack</a>
-                          <a href="../html/apuestas.html">Apuesta Deportiva</a>
+                          <a href="../html/eleccionJuego.html">Apuesta Deportiva</a>
                           <a href="../html/Ruleta.html">Ruleta</a>
-                          <a href="../html/apuestas.html">Apuesta Elecciones</a>
-                          <a href="../html/apuestas.html">Apuesta Galgos</a>
+                          <a href="../html/apuestas_actualidad.html">Apuesta Elecciones</a>
+                          <a href="../html/prueba_tragaperras.html">Tragaperras</a>
                       </div>
                   </li>
-                  <li class="listaheader"><a href="../html/SobreNosotros">Acerca De Nosotros</a></li>
-                  <li class="listaheader"><a href="../html/AtencionCliente">A.T</a></li>
+                  <li class="listaheader"><a href="../html/SobreNosotros.html">Acerca De Nosotros</a></li>
+                  <li class="listaheader"><a href="../html/AtencionCliente.html">A.T</a></li>
                   <li class="listaheader"><a href="../html/inicioSesion.html"><button class="iniciar-sesion">Iniciar Sesión</button></a></li>
                   <li class="listaheader"><a href="../html/registro.html"><button class="registrarte">Registrarte</button></a></li>
               </ul>
@@ -96,6 +97,61 @@
             <button>Menos de 23.5 - 1.80</button>
           </div>
         </div>
+
+        <!-- Ejemplo de partido 3 -->
+        <div class="tennis-match">
+          <!-- Colocación de las imágenes -->
+          <img
+            class="image-left_3"
+            src="../img/alcaraz-removebg-preview.png"
+            alt="Rafael Nadal"
+          />
+          <img
+            class="image-right_3"
+            src="../img/sinner-removebg-preview.png"
+            alt="Novak Djokovic"
+          />
+
+          <h3>Carlos Alcaraz vs. Jannik Sinner</h3>
+          <p>Fecha: 2 de junio de 2024</p>
+          <p>Hora: 19:00</p>
+
+          <h4>Opciones de Apuesta:</h4>
+          <div class="betting-options">
+            <button>Carlos Alcaraz - 2.00</button>
+            <button>Jannik Sinner - 1.80</button>
+            <button>Más de 25.5 - 1.90</button>
+            <button>Menos de 25.5 - 1.90</button>
+          </div>
+        </div>
+
+        <!-- Pop-up modal para ingresar la apuesta -->
+        <div class="modal" id="betModal">
+          <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <!-- Para cerrar el modal -->
+            <h2>Apuesta</h2>
+            <label for="betAmount">Cantidad a apostar:</label>
+            <input
+              type="number"
+              id="betAmount"
+              min="0"
+              step="0.01"
+              placeholder="Ingrese la cantidad"
+            />
+
+            <p id="bettingOption"></p>
+            <!-- Muestra la opción de apuesta -->
+
+            <button id="calculateButton">Calcular Ganancia</button>
+            <!-- Botón para calcular -->
+            <div id="result"></div>
+            <!-- Muestra el resultado -->
+          </div>
+        </div>
+
+        <script src="../js/apuestas_tenis.js"></script>
+        <!-- Ruta del JavaScript -->
       </section>
     </main>
 
@@ -128,7 +184,7 @@
             </div>
             
             <div class="footer-link">
-                <a href="erc/src" target="_blank">aquí iría enlace a erc/src si tan solo tuviera uno</a>
+              <a href="../html/ERC.html" target="_blank">aquí iría enlace a erc/src si tan solo tuviera uno</a>
             </div>
         </nav>
     </div>

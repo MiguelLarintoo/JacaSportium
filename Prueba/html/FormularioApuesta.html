@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
     <link rel="icon" href="../img/favicon.png" sizes="500x500" type="image/png">
-    <link rel="stylesheet" href="../css/Ruleta.css">
+    <link rel="stylesheet" href="../css/FormularioApuesta.css">
+    <script src="../js/validacionFormulario.js"></script>
+    <script src="../js/AlertaFormulario.js"></script>
+
 </head>
 
 <body>
@@ -34,19 +37,49 @@
                     </li>
                     <li class="listaheader"><a href="../html/SobreNosotros.html">Acerca De Nosotros</a></li>
                     <li class="listaheader"><a href="../html/AtencionCliente.html">A.T</a></li>
-                    <li class="listaheader"><a href="../html/inicioSesion.html"><button class="CerrarSesion">Cerrar Sesion</button></a></li>
+                    <li class="listaheader"><a href="../html/inicioSesion.html"><button class="CerrarSesion">Cerrar
+                                Sesion</button></a></li>
                 </ul>
-                
-            </nav>
-            
-        </header>
-    </div>
-    <div class="cuerpo">
-        <a href="../html/FormularioApuesta.html" class="BotonApuesta" target="_blank">Configurar Apuesta</a>
-        <img alt="Rule" class="ImagenRuleta" src="../img/Tablero ruleta_0.jpg">
-    </div>
-   
 
+            </nav>
+        </header>
+        <h1 class="h1Formulario">Formulario con Validación</h1>
+
+        <form onsubmit="return validarFormulario()" id="FormularioCompletado">
+
+            <label for="nombre">Nombre Usuario: </label>
+            <input type="text" name="" id="Nombre"><br>
+
+            <label for="nombre">Email: </label>
+            <input type="email" name="" id="Mail"><br>
+
+            <label for="nombre">Contrasenia: </label>
+            <input type="password" name="" id="Contra"><br>
+
+            <label for="nombre">Dni: </label>
+            <input type="text" name="" id="Dni"><br>
+
+            <label for="Dinero">Dinero Apostar: </label>
+            <input type="number" name="" id="Dinero"><br>
+            
+            <select id="Seleccionable">
+                <option value="Selecciona una opción: ">Selecciona una opción: </option>
+                <option value="Numeros Pares">Numeros Pares</option>
+                <option value="Numeros Impares">Numeros Impares</option>
+                <option value="Numeros Negros">Numeros Negros</option>
+                <option value="Numeros Rojos">Numeros Rojos</option>
+                <option value="Numeros del 1 al 18">Numeros del 1 al 18</option>
+                <option value="Numeros del 19 al 36">Numeros del 19 al 36</option>
+              </select>
+
+            <input type="submit" id="Enviar" value="Enviar Formulario">
+
+        </form>
+
+        <div id="errores" class="error-mensaje"></div>
+    </div>
+    </form>
+    </div>
 
     <div class="footercolor"></div>
 
@@ -54,8 +87,7 @@
     <div class="footer">
         <nav>
             <div class="footer-nav-images">
-                <img src="https://content001.bet365.es/SportsContent/Global/Footer/SPORTSX2-GA-ISO.png" class=""
-                    title="" alt="">
+                <img src="https://content001.bet365.es/SportsContent/Global/Footer/SPORTSX2-GA-ISO.png" class="" title="" alt="">
                 <img src="../img/legal1.png" alt="Descripción de la imagen 1">
                 <img src="../img/legal2.1.png" alt="Descripción de la imagen 1">
                 <img src="../img/legal3.png" alt="Descripción de la imagen 1">

@@ -65,16 +65,17 @@ body {
     padding: 5px 15px; /* Aumentar tamaño del botón en 2px */
 }
 
+
 .listaheader button.registrarte {
     background-color: #ff0000; /* Rojo */
     float: right; /* Mover a la derecha */
-    margin-right: 30px; /* Margen derecho de 20px */
+    margin-right: 20px; /* Margen derecho de 20px */
 }
 
 .listaheader button.iniciar-sesion {
     background-color: #1BC300; /* Verde */
     float: right; /* Mover a la derecha */
-    margin-right: 30px; /* Margen derecho de 20px */
+    margin-right: 20px; /* Margen derecho de 20px */
 }
 
 
@@ -87,161 +88,145 @@ body {
     border-color: #1BC300;
 }
 
-.partido_futbol{
-    color: black;
-    text-shadow: 0px 2px 4px #1BC300;
-}
-
 .main-content {
-    padding: 20px; 
-    text-align: center; 
-    background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300); 
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(34, 33, 33), 90%, #1BC300);
 }
 
-.football-matches {
-    text-align: center; 
-    margin-top: 20px; 
-}
-
-.football-match {
-    background-color: black; 
-    color: #ecf0f1; 
-    padding: 30px; 
-    border-radius: 10px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-bottom: 20px; 
-    position: relative; 
-}
-
-.image-left {
-    position: absolute;
-    top: 10px; /* Ajusta según sea necesario */
-    left: -30px; /* Ajusta según sea necesario */
-    width: 350px; /* Tamaño de la imagen */
-    height: 230px; /* Tamaño de la imagen */
-}
-
-.image-right {
-    position: absolute;
-    top: 15px; /* Ajusta según sea necesario */
-    right: 80px; /* Ajusta según sea necesario */
-    width: 175px; /* Tamaño de la imagen */
-    height: 230px; /* Tamaño de la imagen */
-}
-
-.image-left_2{
-    position: absolute;
-    top: 20px; /* Ajusta según sea necesario */
-    left: 30px; /* Ajusta según sea necesario */
-    width: 225px; /* Tamaño de la imagen */
-    height: 215px; /* Tamaño de la imagen */
-}
-
-.image-right_2{
-    position: absolute;
-    top: 15px; /* Ajusta según sea necesario */
-    right: 80px; /* Ajusta según sea necesario */
-    width: 175px; /* Tamaño de la imagen */
-    height: 225px; /* Tamaño de la imagen */
-}
-
-.image-left_3{
-    position: absolute;
-    top: 20px; /* Ajusta según sea necesario */
-    left: 30px; /* Ajusta según sea necesario */
-    width: 225px; /* Tamaño de la imagen */
-    height: 215px; /* Tamaño de la imagen */
-}
-
-.image-right_3{
-    position: absolute;
-    top: 15px; /* Ajusta según sea necesario */
-    right: 40px; /* Ajusta según sea necesario */
-    width: 250px; /* Tamaño de la imagen */
-    height: 225px; /* Tamaño de la imagen */
-}
-
-.modal {
-    display: none; /* Pop-up oculto por defecto */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
-    border: 2px solid #1BC300; /* Borde con color personalizado */
-    border-radius: 15px; /* Bordes redondeados más suaves */
-    padding: 30px; /* Aumentar el relleno */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
-    width: 400px; /* Ancho del pop-up */
-    transition: all 0.3s ease; /* Suavizar transiciones */
-}
-
-.modal-content {
+.slot-machine {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.wheels {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las ruedas */
+}
+
+.wheel {
+    font-size: 48px;
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro para las ruedas */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wheel-spin {
+    animation: spin 1s ease-in-out forwards;
+}
+
+
+.spin-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1BC300;
     color: white;
+    cursor: pointer;
 }
 
-.close-button {
+.spin-button:hover {
+    background-color: #1BC350; /* Cambia al pasar el mouse */
+}
+
+.result {
+    font-size: 24px; /* Tamaño del texto del resultado */
+    margin-top: 20px;
+    color: #1BC300;
+    text-shadow: 0px 2px 6px black;
+}
+
+.credits {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #1BC300;
+    text-shadow: 0px 2px 6px black;
+}
+
+.creditInput{
+    background-color: #000;
+    color: #1BC300;
+    border: 2px solid #1BC300;
+    box-shadow: 0px 2px 6px #1BC300;
+}
+
+.creditInput:active{
+    background-color: #000;
+    color: #1BC300;
+    border: 2px solid #1BC300;
+}
+
+.add-credits {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.addCreditsButton{
+    background-color: #000;
+    color: #1BC300;
+    border: 2px solid #1BC300;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #1BC300;
+    transition: transform 0.3s; /* Añadimos una transición para suavizar el efecto */
+}
+
+.addCreditsButton:hover{
+    transform: scale(1.1); /* Escalamos el botón al 110% del tamaño original al pasar el ratón sobre él */
+}
+
+.addCreditsButton:active{
+    background-color: #1BC300;
+    color: #000;
+}
+
+
+.add-credits input {
+    padding: 10px;
+    border: 1px sólido #1BC300;
+    border-radius: 5px;
+}
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+    display: none;
+}
+
+.confetti {
     position: absolute;
-    top: 15px; /* Ajusta la posición de cierre */
-    right: 15px; /* Ajusta la posición de cierre */
-    font-size: 28px; /* Aumentar el tamaño de la "X" de cierre */
-    cursor: pointer; /* Cambiar a mano al pasar el mouse */
-    color: white; /* Color blanco para la "X" */
-    transition: color 0.3s; /* Transición suave al pasar el mouse */
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+    animation: confetti-fall 4s linear infinite;
 }
 
-.close-button:hover {
-    color: red; /* Cambia a rojo al pasar el mouse */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
 }
-
-input {
-    margin-bottom: 15px; /* Aumentar el margen inferior */
-    padding: 10px; /* Relleno dentro del input */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ddd; /* Borde suave */
-    width: 100%; /* Ocupa todo el ancho disponible */
-}
-
-button {
-    padding: 12px 20px; /* Aumentar el tamaño del botón */
-    background: #1BC300; /* Color de fondo */
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    color: white; /* Texto en blanco */
-    cursor: pointer; /* Cambiar a mano al pasar el mouse */
-    transition: all 0.3s; /* Suavizar transiciones */
-}
-
-button:hover {
-    background: #16a085; /* Color al pasar el mouse */
-}
-
-
-/* Estilos para los botones de apuesta */
-.betting-options {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px; /* Espacio entre botones */
-}
-
-.betting-options button {
-    background-color: #1BC300; 
-    border-radius: 10px; 
-    border: none; 
-    color: white; 
-    padding: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
-
-.betting-options button:hover {
-    background-color: #16a085; /* Cambia el color al pasar el mouse */
-}
-
 
 .footercolor {
     background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
@@ -352,4 +337,5 @@ button:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
