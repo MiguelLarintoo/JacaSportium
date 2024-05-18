@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="../css/FormularioApuesta.css">
+    <script src="../JavaScript/Alerta_y_ValidacionFormulario.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <img src="../img/logo.png" alt="Logo" class="logo-image">
+                </div>
+                <ul class="listaheader">
+
+                    <li class="listaheader"><a href="https://www.instagram.com" target="_blank"><img src="../img/insts.png" alt="Instagram" class="social-logo"></a></li>
+                    <li class="listaheader"><a href="https://twitter.com" target="_blank"><img src="../img/x.png" alt="Twitter" class="social-logo"></a></li>
+                    <li class="listaheader"><a href="https://www.facebook.com" target="_blank"><img src="../img/facebo.png" alt="Facebook" class="social-logo"></a></li>
+
+
+
+                    <li class="listaheader"><b>Home</b></li>
+                    <li class="listaheader"><b>Juegos</b></li>
+                    <li class="listaheader"><b>Servicios</b></li>
+                    <li class="listaheader"><b>Acerca De Nosotros</b></li>
+                    <li class="listaheader"><a href="../html/FormularioAtenciónAlCliente.html" target="_blank"><b>A.T</b></li></a>
+                    <li class="listaheader"><a href="../html/inicioSesion.html"><button class="CerrarSesion">Cerrar
+                                Sesion</button></a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <h1 class="h1Formulario">Formulario con Validación</h1>
+
+        <form onsubmit="return validarFormulario()" id="FormularioCompletado">
+
+            <label for="nombre">Nombre Usuario: </label>
+            <input type="text" name="" id="Nombre"><br>
+
+            <label for="nombre">Email: </label>
+            <input type="email" name="" id="Mail"><br>
+
+            <label for="nombre">Contrasenia: </label>
+            <input type="password" name="" id="Contra"><br>
+
+            <label for="nombre">Dni: </label>
+            <input type="text" name="" id="Dni"><br>
+
+            <label for="Dinero">Dinero Apostar: </label>
+            <input type="number" name="" id="Dinero"><br>
+            
+            <select id="Seleccionable">
+                <option value="Selecciona una opción: ">Selecciona una opción: </option>
+                <option value="Numeros Pares">Numeros Pares</option>
+                <option value="Numeros Impares">Numeros Impares</option>
+                <option value="Numeros Negros">Numeros Negros</option>
+                <option value="Numeros Rojos">Numeros Rojos</option>
+                <option value="Numeros del 1 al 18">Numeros del 1 al 18</option>
+                <option value="Numeros del 19 al 36">Numeros del 19 al 36</option>
+              </select>
+
+            <input type="submit" id="Enviar" value="Enviar Formulario">
+
+        </form>
+
+        <div id="errores" class="error-mensaje"></div>
+    </div>
+    </form>
+    </div>
+
+    <div class="footercolor"></div>
+
+
+    <div class="footer">
+        <nav>
+            <div class="footer-nav-images">
+                <img src="https://content001.bet365.es/SportsContent/Global/Footer/SPORTSX2-GA-ISO.png" class="" title="" alt="">
+                <img src="../img/legal1.png" alt="Descripción de la imagen 1">
+                <img src="../img/legal2.1.png" alt="Descripción de la imagen 1">
+                <img src="../img/legal3.png" alt="Descripción de la imagen 1">
+                <img src="../img/visa2.1.png" alt="Descripción de la imagen 1">
+                <img src="../img/bizum2.1.png" alt="Descripción de la imagen 1">
+                <img src="../img/cripto2.1.png" alt="Descripción de la imagen 1">
+
+            </div>
+            <div class="footer-content">
+                <div class="left-footer">
+                    <h3 class="footertext">Advertencia de Juego</h3>
+                    <p class="footertext">Todos los juegos ofrecidos en este sitio web son exclusivamente para
+                        mayores de edad.</p>
+                    <p class="footertext">Reconocemos y promovemos prácticas de juegos responsables.</p>
+                    <p class="footertext">Apostar implica riesgos financieros. Recomendamos jugar con moderación y
+                        buscar ayuda si ves que peligra tu salud mental.</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="footertext">Sobre Nosotros</h3>
+                    <p class="footertext">Somos una casa de apuestas comprometida con ofrecer una experiencia de
+                        juego emocionante y segura. Brindamos una amplia gama de opciones de apuestas y juegos de
+                        azar en un entorno confiable y regulado.</p>
+                    <p class="footertext">Nuestro objetivo es proporcionar entretenimiento de alta calidad mientras
+                        priorizamos la integridad y responsabilidad en todas nuestras operaciones.</p>
+                </div>
+            </div>
+
+            <div class="footer-link">
+                <a href="erc/src" target="_blank">aquí iría enlace a erc/src si tan solo tuviera uno</a>
+            </div>
+    </div>
+    </nav>
+    </div>
+</body>
+
+</html>
