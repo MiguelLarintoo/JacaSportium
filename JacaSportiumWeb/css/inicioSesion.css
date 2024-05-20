@@ -36,6 +36,9 @@ body{
     border-color: #1BC300;
 }
 
+.error{
+  color: rgb(238, 89, 89);
+}
 .container {
     max-width: 600px;
     margin: 50px auto;

@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:wght@700&family=Oswald:wght@300&family=Poetsen+One&family=Space+Grotesk:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&display=swap');
-
-body {
-    background-color: rgb(34, 33, 33);
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+
+body {
+    background-color: rgb(34, 33, 33);
 }
 
 .cuerpo {
@@ -202,13 +197,13 @@ html, body {
 }
 
 .footer-link {
-    clear: both; /* Asegura que el enlace esté debajo de los elementos anteriores */
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    clear: both;
+    margin-top: 20px;
     font-size: 20px;
 }
 
 .footer-link a {
-    color: white; /* Cambia el color del texto del enlace */
+    color: white;
     margin: 0 20px;
 }
 
@@ -392,6 +387,11 @@ input[type="submit"]:hover {
     top: -45px;
 }
 
+#CuadrodeTexto{
+    position: relative;
+    right: 10px;
+}
+
 .h1Formulario {
     color: White;
     position: relative;
@@ -410,7 +410,7 @@ input[type="submit"]:hover {
 #imagen-rombo {
     width: 400px;
     height: 400px;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     position: relative;
     left: 800px;
     top: -500px;
@@ -419,7 +419,7 @@ input[type="submit"]:hover {
 #Casino-rombo {
     width: 400px;
     height: 400px;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     position: relative;
     left: -800px;
     top: -500px;

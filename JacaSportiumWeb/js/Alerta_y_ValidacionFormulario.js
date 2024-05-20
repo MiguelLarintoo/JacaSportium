@@ -23,7 +23,7 @@ function validarFormulario() {
     }
 
     //2. Email tiene que contener @
-    if (Email.indexOf("@") === -1) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email)) {
         errores.push("Por favor, ingresa una dirección de correo electrónico válida.");
     }
 
@@ -34,7 +34,7 @@ function validarFormulario() {
 
 
     //4. Verificar si el DNI tiene 8 dígitos
-    if (!/^\d{8}[a-zA-Z]$/.test(dni)) {
+    if (!/^\d{8}[A-Za-z]$/.test(dni)) {
         errores.push("Por favor, ingresa un DNI válido de 8 dígitos seguidos de una letra.");
     }
 
@@ -46,9 +46,8 @@ function validarFormulario() {
         if (seleccion === "Selecciona una opción: ") {
             errores.push("Por favor, selecciona una opción.");
         }
-
-
-
+       
+        
 
         if (errores.length > 0) {
             mostrarErrores(errores);
