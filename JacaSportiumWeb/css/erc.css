@@ -89,6 +89,37 @@ body {
     top: 100px;
     font-size: 20px;
 }
+
+.tabla-ejemplo {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.tabla-ejemplo caption {
+    caption-side: top;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #1BC300;
+}
+
+.tabla-ejemplo th, .tabla-ejemplo td {
+    border: 2px solid #efb810; /* Borde dorado */
+    padding: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.tabla-ejemplo th {
+    background-color: #1BC300;
+    color: #fff;
+}
+
+.tabla-ejemplo tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 .footercolor {
     background: linear-gradient(180deg, rgb(34, 33, 33), 90%, #1BC300);
     width: all;
