@@ -26,6 +26,16 @@ body {
     left: 10px;
     top: 10px;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1BC300;
+    text-shadow: 0px 0px 4px #000000;
+}
+
 
 .logo-container {
     float: left;

@@ -101,6 +101,15 @@ body {
 .hrheader {
     border-color: #1BC300; /* Color de los bordes del encabezado */
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1BC300;
+    text-shadow: 0px 0px 4px #000000;
+}
 
 /* Estilos para el footercolor con degradado */
 .footercolor {

@@ -59,6 +59,15 @@ body {
     font-size: 15px; /* Aumentar tamaño de texto en 2px */
     padding: 5px 15px; /* Aumentar tamaño del botón en 2px */
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1BC300;
+    text-shadow: 0px 0px 4px #000000;
+}
 
 .listaheader button.registrarte {
     background-color: #ff0000; /* Rojo */
